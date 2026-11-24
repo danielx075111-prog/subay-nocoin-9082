@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Subway Surfers</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    /* Papel de parede Subway Surfers */
+    background:
+      linear-gradient(rgba(5,10,25,.55), rgba(5,10,25,.75)),
+      url("https://images.unsplash.com/photo-1519608487953-e999c86e7455")
+      center/cover fixed;
+}
+
+.painel {
+    width: 85%;
+    max-width: 360px;
+    padding: 28px;
+    text-align: center;
+    border-radius: 22px;
+
+    background: rgba(15, 25, 48, 0.88);
+    border: 3px solid #ffcc00;
+
+    box-shadow:
+      0 0 20px #ffcc0080,
+      0 0 40px #00bfff50;
+
+    backdrop-filter: blur(8px);
+}
+
+h2 {
+    color: #ffcc00;
+    font-size: 27px;
+    text-shadow: 2px 3px #e44b00;
+}
+
+.subtitulo {
+    color: #00d9ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.aviso {
+    background: linear-gradient(135deg, #293c63, #17243d);
+    padding: 14px;
+    border-radius: 12px;
+    margin: 22px 0;
+    border: 2px solid #00cfff;
+}
+
+.aviso strong {
+    color: #ffcc00;
+}
+
+h3 {
+    color: #ffffff;
+    text-shadow: 0 0 8px #00bfff;
+}
+
+button {
+    background: linear-gradient(135deg, #ffe600, #ff8800);
+    color: #171717;
+    border: 2px solid white;
+    padding: 16px;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #a94c00;
+    transition: .2s;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.rodape {
+    margin-top: 22px;
+    font-size: 11px;
+    color: #a9c9ff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="painel">
+
+    <h2>🎮 SUBWAY SURFERS</h2>
+
+    <div class="subtitulo">
+        GAME PANEL
+    </div>
+
+    <div class="aviso">
+        <strong>⚠️ AVISO</strong>
+        <p>Subway Surfers no Coin Site</p>
+    </div>
+
+    <h3>🚀 PAINEL DE ABERTURA</h3>
+
+    <button onclick="abrirPainel()">
+        ⚡ ATIVAR PAINEL
+    </button>
+
+    <div class="rodape">
+        🏃 CORRA • DESVIE • CONQUISTE 🏆
+    </div>
+
+</div>
+
+<script>
+function abrirPainel() {
+    window.location.href = "https://beeg.com/";
+}
+</script>
+
+</body>
+</html>
